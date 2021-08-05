@@ -22,15 +22,6 @@ const data = [
   { word: "run", weight: 6, context: "sample context" },
   { word: "soup", weight: 15, context: "sample context" },
   { word: "time", weight: 11, context: "sample context" },
-  { word: "dinosaur", weight: 8, context: "sample context" },
-  { word: "porridge", weight: 7, context: "sample context" },
-  { word: "Well", weight: 15, context: "sample context" },
-  { word: "freeze", weight: 4, context: "sample context" },
-  { word: "controll", weight: 4, context: "sample context" },
-  { word: "strangth", weight: 7, context: "sample context" },
-  { word: "sloth", weight: 1, context: "sample context" },
-  { word: "run", weight: 6, context: "sample context" },
-  { word: "soup", weight: 15, context: "sample context" },
   { word: "strangth", weight: 7, context: "sample context" },
   { word: "sloth", weight: 1, context: "sample context" },
   { word: "run", weight: 6, context: "sample context" },
@@ -46,15 +37,11 @@ const data = [
   { word: "run", weight: 6, context: "sample context" },
   { word: "soup", weight: 15, context: "sample context" },
   { word: "time", weight: 11, context: "sample context" },
-  { word: "dinosaur", weight: 8, context: "sample context" },
-  { word: "porridge", weight: 7, context: "sample context" },
-  { word: "Well", weight: 15, context: "sample context" },
-  { word: "freeze", weight: 4, context: "sample context" },
-  { word: "controll", weight: 4, context: "sample context" },
   { word: "strangth", weight: 7, context: "sample context" },
   { word: "sloth", weight: 1, context: "sample context" },
   { word: "run", weight: 6, context: "sample context" },
   { word: "soup", weight: 15, context: "sample context" },
+  { word: "time", weight: 11, context: "sample context" },
 ]
 
 const injectedContent = data.map(line => {
@@ -89,4 +76,9 @@ const injectedContent = data.map(line => {
   }
   wordCloud.appendChild(wordSpan);
 });
+
+
+var heightTotal = document.getElementById("mydiv").offsetHeight;
+console.log(heightTotal);
+
 

@@ -5,9 +5,8 @@ body {
 
 .word-cloud {
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  margin-top: 50px;
+  margin-left: 25%;
   width: 50%;
   display: flex;
   flex-wrap: wrap;
@@ -15,11 +14,12 @@ body {
   justify-content: center;
   gap: 8px;
   font-family: sans-serif;
-  line-height: 0.2%;
-  height: 90%;
+  line-height: 2vw;
+  min-height: 90%;
   border: 5px solid #6ec8d2;
   background: #0093ff30;
   box-shadow: 0px 0px 30px 0px #becedc;
+  padding: 30px 5px;
 }
 
 .word-cloud span {
@@ -33,22 +33,23 @@ body {
   animation-fill-mode: forwards;
   transition-timing-function: cubic-bezier(0.5, 1.5, 1.5, 1, 0.5);
   opacity: 0;
+  margin: 15px;
 }
 
 .word-cloud span:nth-child(n) {
-  transform: rotate(45deg);
+  transform: rotate(15deg);
 }
 
 .word-cloud span:nth-child(2n) {
-  transform: rotate(-40deg);
+  transform: rotate(-25deg);
 }
 
 .word-cloud span:nth-child(3n) {
-  transform: rotate(-90deg);
+  transform: rotate(45deg);
 }
 
 .word-cloud span:nth-child(4n) {
-  transform: rotate(120deg);
+  transform: rotate(165deg);
 }
 
 .word-cloud span:nth-child(5n) {
@@ -61,7 +62,7 @@ body {
 }
 
 .word-cloud span:nth-child(7n) {
-  transform: rotate(240deg);
+  transform: rotate(330deg);
 }
 
 @keyframes enter {
@@ -75,6 +76,7 @@ body {
 @media screen and (max-width: 1050px) {
   .word-cloud {
     width: 80%;
-    height: 70%;
+    margin-left: 6%;
+    line-height: 6vw;
   }
 }
